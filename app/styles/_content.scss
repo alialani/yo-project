@@ -17,3 +17,12 @@ body {
     @include border-top-radius(0px);
     @include border-bottom-radius(50px);
 }
+
+@mixin simple-output-mixin() {
+    color: $brand-primary;
+    text-decoration: underline;
+}
+
+.my-content {
+    @include simple-output-mixin();
+}
